@@ -1,19 +1,20 @@
-syntax on
 set nu
 set ai
-
-set ts=4 sw=4
 set expandtab
-
 set smartindent
 set noexpandtab
 set tabstop=4
 set shiftwidth=4
-
 set hlsearch
-set ruler
-color ron
-
+set encoding=utf-8
 set guicursor=
 
-set runtimepath^=~/.vim/bundle/ctrlp.vim
+call plug#begin('~/.local/share/nvim/site/plugin')
+
+Plug 'lifepillar/vim-gruvbox8'
+
+call plug#end()
+
+set background=dark
+
+autocmd VimEnter * colorscheme gruvbox8
