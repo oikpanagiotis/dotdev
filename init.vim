@@ -16,5 +16,6 @@ Plug 'lifepillar/vim-gruvbox8'
 call plug#end()
 
 set background=dark
+set clipboard=unnamedplus
 
 autocmd VimEnter * colorscheme gruvbox8
