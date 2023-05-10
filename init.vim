@@ -11,11 +11,12 @@ set guicursor=
 
 call plug#begin('~/.local/share/nvim/site/plugin')
 
-Plug 'lifepillar/vim-gruvbox8'
+Plug 'morhetz/gruvbox'
+Plug 'vim-airline/vim-airline'
 
 call plug#end()
 
 set background=dark
 set clipboard=unnamedplus
 
-autocmd VimEnter * colorscheme gruvbox8
+autocmd VimEnter * colorscheme gruvbox
