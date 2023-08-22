@@ -20,10 +20,12 @@ return require('packer').startup(function(use)
   end})
 
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-
   use('theprimeagen/harpoon')
-
   use('tpope/vim-fugitive')
+
+  use {"nvim-telescope/telescope-file-browser.nvim",
+    requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
+  }
 
   use {
 	  'VonHeikemen/lsp-zero.nvim',
