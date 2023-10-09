@@ -1,8 +1,9 @@
 local lsp = require('lsp-zero').preset({})
 
 lsp.ensure_installed({
-	--'rust_analyzer',
-	'clangd'
+	'rust_analyzer',
+	'clangd',
+    'lua_ls'
 })
 
 local cmp = require('cmp')

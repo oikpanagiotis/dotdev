@@ -1,6 +1,6 @@
 function Colors(color)
-	color = color or "gruvbox"
-	vim.cmd.colorscheme(color)
+	color = color or "nightfox"
+    vim.cmd.colorscheme(color)
 end
 
 Colors()
