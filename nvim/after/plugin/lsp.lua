@@ -2,7 +2,9 @@ local lsp = require('lsp-zero').preset({})
 
 lsp.ensure_installed({
     'clangd',
-    'lua_ls'
+    'lua_ls',
+    'pyright',
+    'ruff_lsp'
 })
 
 local cmp = require('cmp')
